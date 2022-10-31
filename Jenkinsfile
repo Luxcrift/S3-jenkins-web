@@ -22,7 +22,7 @@ pipeline {
         }
          stage('Upload to S3') {
             steps {
-                sh 'aws s3 cp S3-jenkins-web s3://desafio2-mieulet --recursive'
+                sh 'aws s3 cp S3-jenkins-web s3://jenkins-mieulet --recursive'
             }
         }
     }
